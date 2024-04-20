@@ -1,3 +1,4 @@
+param resourceGroupName string
 param storageAccountName string
 param cdnProfileName string
 param cdnEndpointName string
