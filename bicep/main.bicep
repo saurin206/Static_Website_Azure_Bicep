@@ -3,6 +3,10 @@ param cdnProfileName string
 param cdnEndpointName string
 param locationname string
 
+resource rg 'Microsoft.Resources/resourceGroups@2021-08-01' = {
+  name: resourceGroupName
+  location: locationname
+}
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
   name: storageAccountName
   location: locationname
